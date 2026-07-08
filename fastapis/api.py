@@ -53,3 +53,6 @@ def chat(request: ChatRequest):
         "answer": answer
     }
 
+@app.get("/")
+def home():
+    return {"status": "ok"}
